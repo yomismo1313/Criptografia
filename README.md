@@ -22,9 +22,51 @@ Entorno: Kali Linux → Ubuntu (10.0.2.12) · Herramientas: openssl, hashcat, ha
 
 
 📋 Tabla de credenciales
+## Encoding (encode1–encode8)
 
-UsuarioContraseñaTécnicaencode1encode1Texto plano en info.txtencode2revers3DTexto invertido (rev)encode3B4se64Base64encode4D3sreveR46es4BBase64 invertidoencode5H3xToT3xtHexadecimal → ASCII (xxd -r -p)encode6ASD3cimalCIDecimal (cryptii.com)encode7URL<'#'>EncodingURL Encoding (cryptii.com)encode8Text2BinaryBinario → texto (cryptii.com)encrypt1encrypt1Texto plano en flag_mid.txtencrypt2CaesarKn0wCifrado César, 17 posicionesencrypt3SustituyeMESustitución alfabéticaencrypt4NotSoEasyTransposición columnar (clave TRANSPOSE)encrypt5EncryptITVigenereCifrado Vigenère (clave Vigenere)encrypt63DESEncription!OpenSSL 3DES (pass Symmetric)encrypt7AESEncrypt256OpenSSL AES-256-CBC (pass AES256Symmetric)encrypt8-H@rdl3v3l!!Texto plano en credentials.txt (vía hashing6)encrypt9anagrama:amarganaIngeniería inversa de xor.pypkencrypt1pkencrypt1Texto plano en flag_mid.txtpkencrypt2Dec0deASPrivateRSA directo (openssl pkeyutl -decrypt)pkencrypt3KeyExchangeEPHCifrado híbrido RSA + AES (clave efímera)hashing1hashing1Texto plano en flag_mid.txthashing2Check1ngMD5Hash MD5 → coincide con contraseña7.txthashing3Check1ngSHA1Hash SHA-1 → coincide con contraseña4.txthashing4BDHey23dsfad890bSHDYsmHash SHA-256 → coincide con contraseña8.txthashing5BDHasDFHsydnbSHDYsmHash SHA-512 → coincide con contraseña9.txthashing6admin123Fuerza bruta MD5 con hashcat
+| Reto     | Usuario/Contraseña | Técnica                                              |
+|----------|---------------------|-------------------------------------------------------|
+| encode1  | encode1             | Texto plano en `info.txt`                             |
+| encode2  | revers3D            | Texto invertido (rev)                                  |
+| encode3  | B4se64              | Base64                                                  |
+| encode4  | D3sreveR46es4B       | Base64 invertido                                       |
+| encode5  | H3xToT3xt            | Hexadecimal → ASCII (`xxd -r -p`)                       |
+| encode6  | ASD3cimal           | Decimal → ASCII (CI) (cryptii.com)                     |
+| encode7  | URL<'#'>Encoding    | URL Encoding (cryptii.com)                              |
+| encode8  | Text2Binary         | Binario → texto (cryptii.com)                           |
 
+## Encrypt (encrypt1–encrypt9)
+
+| Reto      | Usuario/Contraseña    | Técnica                                                |
+|-----------|------------------------|---------------------------------------------------------|
+| encrypt1  | encrypt1               | Texto plano en `flag_mid.txt`                           |
+| encrypt2  | CaesarKn0w             | Cifrado César, 17 posiciones                             |
+| encrypt3  | SustituyeME             | Sustitución alfabética                                   |
+| encrypt4  | NotSoEasy               | Transposición columnar (clave `TRANSPOSE`)               |
+| encrypt5  | EncryptIT               | Cifrado Vigenère (clave `Vigenere`)                       |
+| encrypt6  | 3DESEncription!         | OpenSSL 3DES (pass `Symmetric`)                           |
+| encrypt7  | AESEncrypt256           | OpenSSL AES-256-CBC (pass `AES256Symmetric`)               |
+| encrypt8  | -H@rdl3v3l!!            | Texto plano en `credentials.txt` (vía hashing6)            |
+| encrypt9  | anagrama:amargana       | Ingeniería inversa de `xor.py`                            |
+
+## PK Encrypt (pkencrypt1–pkencrypt3)
+
+| Reto       | Usuario/Contraseña | Técnica                                                       |
+|------------|----------------------|------------------------------------------------------------------|
+| pkencrypt1 | pkencrypt1           | Texto plano en `flag_mid.txt`                                    |
+| pkencrypt2 | Dec0deASPrivate       | RSA directo (`openssl pkeyutl -decrypt`)                          |
+| pkencrypt3 | KeyExchangeEPH        | Cifrado híbrido RSA + AES (clave efímera)                         |
+
+## Hashing (hashing1–hashing6)
+
+| Reto      | Usuario/Contraseña                  | Técnica                                              |
+|-----------|---------------------------------------|---------------------------------------------------------|
+| hashing1  | hashing1                              | Texto plano en `flag_mid.txt`                            |
+| hashing2  | Check1ngMD5                           | Hash MD5 → coincide con `contraseña7.txt`                |
+| hashing3  | Check1ngSHA1                          | Hash SHA-1 → coincide con `contraseña4.txt`              |
+| hashing4  | BDHey23dsfad890bSHDYsm                | Hash SHA-256 → coincide con `contraseña8.txt`            |
+| hashing5  | BDHasDFHsydnbSHDYsm                   | Hash SHA-512 → coincide con `contraseña9.txt`            |
+| hashing6  | admin123                              | Fuerza bruta MD5 con hashcat                              |
 
 🗺️ Flujo general del reto
 
