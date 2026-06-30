@@ -536,6 +536,7 @@ Lo conseguiste! Aplica ROT5 a tu nombre y escribelo por slack!
 ![Mensaje final descifrado con Python en una línea](assets/page-15.jpg)
 ---
 7. Resumen de credenciales
+```
 | # | Usuario | Contraseña | Técnica empleada |
 |---|---|---|---|
 | 1 | `encode1` | `encode1` | Texto plano en `info.txt` |
@@ -564,7 +565,7 @@ Lo conseguiste! Aplica ROT5 a tu nombre y escribelo por slack!
 | 24 | `hashing6` | `admin123` | Fuerza bruta MD5 con hashcat |
 | 25 | `encrypt8` | `-H@rdl3v3l!!` | Texto plano en `credentials.txt` (vía hashing6) |
 | 26 | `encrypt9` | `anagrama:amargana` | Ingeniería inversa de `xor.py` |
----
+``
 8. Herramientas utilizadas
 Herramienta	Uso en el lab
 `arp-scan`	Descubrimiento de hosts en la red NAT
