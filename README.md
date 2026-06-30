@@ -536,33 +536,34 @@ Lo conseguiste! Aplica ROT5 a tu nombre y escribelo por slack!
 ![Mensaje final descifrado con Python en una línea](assets/page-15.jpg)
 ---
 7. Resumen de credenciales
-#	Usuario	Contraseña	Técnica empleada
-1	`encode1`	`encode1`	Texto plano en `info.txt`
-2	`encode2`	`revers3D`	Texto invertido (`rev`)
-3	`encode3`	`B4se64`	Base64
-4	`encode4`	`D3sreveR46es4B`	Base64 invertido
-5	`encode5`	`H3xToT3xt`	Hexadecimal → ASCII (`xxd -r -p`)
-6	`encode6`	`ASD3cimalCI`	Decimal/Entero (cryptii.com)
-7	`encode7`	`URL<'#'>Encoding`	URL Encoding (cryptii.com)
-8	`encode8`	`Text2Binary`	Binario → texto (cryptii.com)
-9	`encrypt1`	`encrypt1`	Texto plano en `flag_mid.txt`
-10	`encrypt2`	`CaesarKn0w`	Cifrado César, 17 posiciones
-11	`encrypt3`	`SustituyeME`	Sustitución alfabética
-12	`encrypt4`	`NotSoEasy`	Transposición columnar (clave `TRANSPOSE`)
-13	`encrypt5`	`EncryptITVigenere`	Cifrado Vigenère (clave `Vigenere`)
-14	`encrypt6`	`3DESEncription!`	OpenSSL 3DES (clave `Symmetric`)
-15	`encrypt7`	`AESEncrypt256`	OpenSSL AES-256-CBC (clave `AES256Symmetric`)
-16	`pkencrypt1`	`pkencrypt1`	Texto plano en `flag_mid.txt`
-17	`pkencrypt2`	`Dec0deASPrivate`	RSA directo (`openssl pkeyutl -decrypt`)
-18	`pkencrypt3`	`KeyExchangeEPH`	Cifrado híbrido RSA + AES (clave efímera)
-19	`hashing1`	`hashing1`	Texto plano en `flag_mid.txt`
-20	`hashing2`	`Check1ngMD5`	Hash MD5 → coincide con `contraseña7.txt`
-21	`hashing3`	`Check1ngSHA1`	Hash SHA-1 → coincide con `contraseña4.txt`
-22	`hashing4`	`BDHey23dsfad890bSHDYsm`	Hash SHA-256 → coincide con `contraseña8.txt`
-23	`hashing5`	`BDHasDFHsydnbSHDYsm`	Hash SHA-512 → coincide con `contraseña9.txt`
-24	`hashing6`	`admin123`	Fuerza bruta MD5 con hashcat
-25	`encrypt8`	`-H@rdl3v3l!!`	Texto plano en `credentials.txt` (vía hashing6)
-26	`encrypt9`	`anagrama:amargana`	Ingeniería inversa de `xor.py`
+| # | Usuario | Contraseña | Técnica empleada |
+|---|---|---|---|
+| 1 | `encode1` | `encode1` | Texto plano en `info.txt` |
+| 2 | `encode2` | `revers3D` | Texto invertido (`rev`) |
+| 3 | `encode3` | `B4se64` | Base64 |
+| 4 | `encode4` | `D3sreveR46es4B` | Base64 invertido |
+| 5 | `encode5` | `H3xToT3xt` | Hexadecimal → ASCII (`xxd -r -p`) |
+| 6 | `encode6` | `ASD3cimalCI` | Decimal/Entero (cryptii.com) |
+| 7 | `encode7` | `URL<'#'>Encoding` | URL Encoding (cryptii.com) |
+| 8 | `encode8` | `Text2Binary` | Binario → texto (cryptii.com) |
+| 9 | `encrypt1` | `encrypt1` | Texto plano en `flag_mid.txt` |
+| 10 | `encrypt2` | `CaesarKn0w` | Cifrado César, 17 posiciones |
+| 11 | `encrypt3` | `SustituyeME` | Sustitución alfabética |
+| 12 | `encrypt4` | `NotSoEasy` | Transposición columnar (clave `TRANSPOSE`) |
+| 13 | `encrypt5` | `EncryptITVigenere` | Cifrado Vigenère (clave `Vigenere`) |
+| 14 | `encrypt6` | `3DESEncription!` | OpenSSL 3DES (clave `Symmetric`) |
+| 15 | `encrypt7` | `AESEncrypt256` | OpenSSL AES-256-CBC (clave `AES256Symmetric`) |
+| 16 | `pkencrypt1` | `pkencrypt1` | Texto plano en `flag_mid.txt` |
+| 17 | `pkencrypt2` | `Dec0deASPrivate` | RSA directo (`openssl pkeyutl -decrypt`) |
+| 18 | `pkencrypt3` | `KeyExchangeEPH` | Cifrado híbrido RSA + AES (clave efímera) |
+| 19 | `hashing1` | `hashing1` | Texto plano en `flag_mid.txt` |
+| 20 | `hashing2` | `Check1ngMD5` | Hash MD5 → coincide con `contraseña7.txt` |
+| 21 | `hashing3` | `Check1ngSHA1` | Hash SHA-1 → coincide con `contraseña4.txt` |
+| 22 | `hashing4` | `BDHey23dsfad890bSHDYsm` | Hash SHA-256 → coincide con `contraseña8.txt` |
+| 23 | `hashing5` | `BDHasDFHsydnbSHDYsm` | Hash SHA-512 → coincide con `contraseña9.txt` |
+| 24 | `hashing6` | `admin123` | Fuerza bruta MD5 con hashcat |
+| 25 | `encrypt8` | `-H@rdl3v3l!!` | Texto plano en `credentials.txt` (vía hashing6) |
+| 26 | `encrypt9` | `anagrama:amargana` | Ingeniería inversa de `xor.py` |
 ---
 8. Herramientas utilizadas
 Herramienta	Uso en el lab
